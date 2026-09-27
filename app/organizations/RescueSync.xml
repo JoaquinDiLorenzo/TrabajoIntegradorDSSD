@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="ASCII"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="OperadorM">
+      <firstName>Operador</firstName>
+      <lastName>Municipal</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123123123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="CoordinadorR">
+      <firstName>Coordinador</firstName>
+      <lastName>Regional</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123123123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="RescatistasUnidos">
+      <firstName>Rescatistas</firstName>
+      <lastName>Unidos</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123123123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Manos Solidarias">
+      <firstName>Manos</firstName>
+      <lastName>Solidarias</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123123123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Direcci&#xf3;n">
+      <firstName>Direcci&#xf3;n</firstName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123123123</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="operador_municipal">
+      <displayName>operador_municipal</displayName>
+    </role>
+    <role name="coordinador_regional">
+      <displayName>coordinador_regional</displayName>
+    </role>
+    <role name="representante_ong">
+      <displayName>representante_ong</displayName>
+    </role>
+    <role name="auditor">
+      <displayName>auditor</displayName>
+    </role>
+    <role name="sistema_nacional">
+      <displayName>sistema_nacional</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="rescuesync">
+      <displayName>RescueSync</displayName>
+    </group>
+    <group name="municipios" parentPath="/rescuesync">
+      <displayName>municipios</displayName>
+    </group>
+    <group name="centro-coordinador" parentPath="/rescuesync">
+      <displayName>centro-coordinador</displayName>
+    </group>
+    <group name="ongs" parentPath="/rescuesync">
+      <displayName>ongs</displayName>
+    </group>
+    <group name="direccion" parentPath="/rescuesync">
+      <displayName>direccion</displayName>
+    </group>
+    <group name="la-plata" parentPath="/rescuesync/municipios">
+      <displayName>la-plata</displayName>
+    </group>
+    <group name="berisso" parentPath="/rescuesync/municipios">
+      <displayName>berisso</displayName>
+    </group>
+    <group name="rescatistas-unidos" parentPath="/rescuesync/ongs">
+      <displayName>rescatistas-unidos</displayName>
+    </group>
+    <group name="manos-solidarias" parentPath="/rescuesync/ongs">
+      <displayName>manos-solidarias</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>OperadorM</userName>
+      <roleName>operador_municipal</roleName>
+      <groupName>la-plata</groupName>
+      <groupParentPath>/rescuesync/municipios</groupParentPath>
+    </membership>
+    <membership>
+      <userName>CoordinadorR</userName>
+      <roleName>coordinador_regional</roleName>
+      <groupName>centro-coordinador</groupName>
+      <groupParentPath>/rescuesync</groupParentPath>
+    </membership>
+    <membership>
+      <userName>RescatistasUnidos</userName>
+      <roleName>representante_ong</roleName>
+      <groupName>rescatistas-unidos</groupName>
+      <groupParentPath>/rescuesync/ongs</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Manos Solidarias</userName>
+      <roleName>representante_ong</roleName>
+      <groupName>manos-solidarias</groupName>
+      <groupParentPath>/rescuesync/ongs</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Direcci&#xf3;n</userName>
+      <roleName>auditor</roleName>
+      <groupName>direccion</groupName>
+      <groupParentPath>/rescuesync</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>
