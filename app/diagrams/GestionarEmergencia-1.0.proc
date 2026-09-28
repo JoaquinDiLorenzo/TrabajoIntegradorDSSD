@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:connectorconfiguration="http://www.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
   <process:MainProcess xmi:id="_PSLHMKezEfGgzo7UffOmHQ" name="GestionarEmergencia" bonitaModelVersion="9">
-    <elements xmi:type="process:Pool" xmi:id="_PSM8YKezEfGgzo7UffOmHQ" name="Gestionar Emergencia" displayName="Sistema Nacional">
+    <elements xmi:type="process:Pool" xmi:id="_PSM8YKezEfGgzo7UffOmHQ" name="Gestionar Emergencia" displayName="Gestionar Emergencia">
       <elements xmi:type="process:Lane" xmi:id="_PSNjcKezEfGgzo7UffOmHQ" name="Municipio" actor="_PSNjiaezEfGgzo7UffOmHQ">
         <elements xmi:type="process:StartEvent" xmi:id="_PSNjcaezEfGgzo7UffOmHQ" name="Start1" outgoing="_PSNjhqezEfGgzo7UffOmHQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_PSNjcqezEfGgzo7UffOmHQ" name="" content="" returnTypeFixed="true"/>
