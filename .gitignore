@@ -7,3 +7,9 @@ dependency-reduced-pom.xml
 pom.xml.versionsBackup
 node/
 node_modules/
+
+# Bonita Studio local/generated files
+.DS_Store
+app/dependencies/
+app/h2_database.backup-*/
+app/.settings/org.bonitasoft.studio.common.repository.prefs

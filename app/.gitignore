@@ -19,7 +19,7 @@
 
 !/.settings
 /.settings/**
-!/.settings/org.bonitasoft.studio.common.repository.prefs
+/.settings/org.bonitasoft.studio.common.repository.prefs
 !/.settings/org.bonitasoft.studio.common.repository/
 !/.settings/org.bonitasoft.studio.common.repository/uib/
 !/app/
